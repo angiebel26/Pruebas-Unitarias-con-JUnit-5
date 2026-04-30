@@ -18,7 +18,7 @@ public class CarritoTest
     {
         //Después de agregar un producto, la cantidad de productos es 1.
         Carrito carrito = new Carrito();
-        Producto producto = new Producto("Arepa feliz", 2500, 1);
+        Producto producto = new Producto("Dona de Arequipe", 3500, 1);
 
         carrito.agregar(producto);
         assertEquals(1, carrito.cantidadDeProductos());
@@ -42,7 +42,7 @@ public class CarritoTest
     void carritoConAlMenosUnProductoNoVacio()
     {
         Carrito carrito = new Carrito();
-        Producto producto = new Producto("Pollo feliz", 10500, 10);
+        Producto producto = new Producto("Pollo Broaster", 8500, 10);
 
         carrito.agregar(producto);
         assertFalse(carrito.estaVacio());
